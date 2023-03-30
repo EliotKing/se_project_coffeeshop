@@ -124,6 +124,7 @@
 }
 
 .recipes__title {
+  font-weight: 500;
   font-size: 44px;
   line-height: 52px;
 
@@ -169,5 +170,102 @@
   font-size: 20px;
   line-height: 30px;
 
+  margin: 0;
+}
+
+/* Reservation Section */
+
+.reservation {
+  background-color: #d9e7ff;
+  background-image: url(../images/background_reservation.svg);
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0 120px;
+}
+
+.reservation__title {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+
+  margin: 0;
+  text-align: center;
+}
+
+.form {
+  max-width: 385px;
+}
+
+.reservation__form {
+  margin: 80px auto 0;
+}
+
+.form__fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__label {
+  margin: 0;
+}
+
+.form__input {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+
+  margin: 8px 0 32px;
+  padding: 0 20px;
+  height: 60px;
+  border-color: #838383;
+  border-radius: 4px;
+}
+
+.form__input::placeholder {
+  color: #838383;
+}
+
+.form__button {
+  color: #fff;
+  background-color: #2f80ed;
+  margin: 0 0 32px;
+  height: 60px;
+  border-radius: 4px;
+  padding: 0;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.form__button:hover {
+  opacity: 70%;
+}
+
+.form__label_type_checkbox {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.form__checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  margin: 0;
+  padding: 0;
+}
+
+.form__checkbox:checked {
+  background-color: #2f80ed;
+  background-image: url(../images/check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px;
+}
+
+.form__checkbox-description {
   margin: 0;
 }
