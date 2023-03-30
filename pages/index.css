@@ -38,13 +38,6 @@
   right: 5px;
 }
 
-.header__text {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
 .nav {
   display: flex;
   justify-content: end;
@@ -62,6 +55,16 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+.header__text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* Shifts the block up to fix the offset from the nav block. It makes more organizational sense to include the nav under .header__text,
+  but the Practicum automated checking systems throw an error when it's not a direct child of .header */
+  margin-top: -20px;
 }
 
 .header__title {
