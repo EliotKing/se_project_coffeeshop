@@ -1,0 +1,89 @@
+/* Depends on Imports:
+      logo.css
+      nav.css
+*/
+
+.header {
+  background-color: #fff;
+  background-image: url(../images/background_header.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 30px 80px 40px;
+
+  height: 100vh;
+  min-height: 720px;
+  max-height: 800px;
+}
+
+.header__logo {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}
+
+.header__nav {
+  justify-content: end;
+  margin: 0;
+}
+
+.header__image {
+  width: 646px;
+  height: 568px;
+  position: absolute;
+  top: 124px;
+  right: 5px;
+}
+
+.header__text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* Shifts the block up to fix the offset from the nav block. It makes more organizational sense to include the nav under .header__text,
+  but the Practicum automated checking systems throw an error when it's not a direct child of .header */
+  margin-top: -20px;
+}
+
+.header__title {
+  font-weight: inherit;
+  font-size: 60px;
+  line-height: 72px;
+
+  max-width: 729px;
+  margin: 202px 0 0;
+}
+
+.header__span-accent {
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-style: italic;
+  font-weight: normal;
+  color: #2f80ed;
+
+  display: block;
+}
+
+.header__description {
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+
+  max-width: 683px;
+  margin: 28px 0 0;
+}
+
+.header__footer {
+  color: #838383;
+
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin: auto 0 0;
+}
+
+.header__paragraph {
+  margin: 0;
+}
