@@ -14,3 +14,4 @@ This is the second project of the Web Development program at Practicum. It was c
 ## Potential Improvements Checklist 
 
 - Scalability for different screen resolutions
+- Functional form
